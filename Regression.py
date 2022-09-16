@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 import pickel
 pickel_in=open('Classifier.pkl','rb')
