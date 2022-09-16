@@ -9,7 +9,7 @@ c=st.number_input('sepal length(cm)')
 d=st.number_input('sepal width(cm)')
 r=' '
 if st.button('PREDICT'):
-    result=clf.predict([[a,b,.c,d]]).squeeze()
+    result=clf.predict([[a,b,c,d]]).squeeze()
     if result==0:
         st.success('SETOSA')
     elif result==0:
