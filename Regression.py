@@ -7,7 +7,7 @@ a=st.number_input('sepal lengthI(cm)')
 b=st.number_input('sepal width(cm)')
 c=st.number_input('sepal length(cm)')
 d=st.number_input('sepal width(cm)')
-r=' '
+result=' '
 if st.button('PREDICT'):
     result=clf.predict([[a,b,c,d]]).squeeze()
     if result==0:
