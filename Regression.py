@@ -3,10 +3,10 @@ import streamlit as st
 import pickle
 pickle_in=open('Classifier.pkl','rb')
 clf=pickle.load(pickle_in)
-a=st.number_input('sepal lengthI(cm)')
-b=st.number_input('sepal width(cm)')
-c=st.number_input('sepal length(cm)')
-d=st.number_input('sepal width(cm)')
+a=st.number_input('sepal length')
+b=st.number_input('sepal width')
+c=st.number_input('sepal length')
+d=st.number_input('sepal width')
 result=' '
 if st.button('PREDICT'):
     result=clf.predict([[a,b,c,d]]).squeeze()
